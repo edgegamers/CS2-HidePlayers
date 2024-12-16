@@ -10,7 +10,7 @@ public sealed class Plugin : BasePlugin, IPluginConfig<PluginConfig>
 {
     public override string ModuleName => "HidePlayers";
     public override string ModuleAuthor => "xstage";
-    public override string ModuleVersion => "1.1.0";
+    public override string ModuleVersion => "1.1.1";
     public override string ModuleDescription => "Plugin uses code borrowed from CS2Fixes / cs2kz-metamod / hl2sdk";
 
     public PluginConfig Config { get; set; } = new();
