@@ -79,7 +79,7 @@ public sealed class Plugin : BasePlugin, IPluginConfig<PluginConfig>
         });
 
         foreach (var cmd in Config.Command.Split(",")) {
-            AddCommand(Config.Command, "Hide players models", (player, info) =>
+            AddCommand(cmd, "Hide players models", (player, info) =>
             {
                 player?.PrintToChat(Localizer["Player.Hide", Localizer["Plugin.Tag"], Localizer[(_hide[player.Index] ^= true) ? "Plugin.Enable" : "Plugin.Disable"]]);
             });
