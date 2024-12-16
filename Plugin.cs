@@ -131,7 +131,7 @@ public sealed class Plugin : BasePlugin, IPluginConfig<PluginConfig>
 
                 var pawn = target.PlayerPawn.Value!;
 
-                if ((LifeState_t)pawn.LifeState != LifeState_t.LIFE_ALIVE && Config.HideDead)
+                if ((LifeState_t)pawn.LifeState != LifeState_t.LIFE_ALIVE)
                 {
                     info.m_pTransmitEntity.Clear((int)pawn.Index);
                     continue;
