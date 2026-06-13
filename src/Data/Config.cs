@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
 using CounterStrikeSharp.API.Core;
 
-namespace HidePlayers;
+namespace HidePlayers.Data;
 
 public class PluginConfig : BasePluginConfig
 {

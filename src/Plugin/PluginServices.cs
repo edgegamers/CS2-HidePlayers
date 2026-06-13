@@ -1,7 +1,8 @@
 using CounterStrikeSharp.API.Core;
+using HidePlayers.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace HidePlayers;
+namespace HidePlayers.Plugin;
 
 public sealed class PluginServices : IPluginServiceCollection<Plugin>
 {
