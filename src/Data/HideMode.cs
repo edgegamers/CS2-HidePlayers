@@ -1,8 +1,8 @@
-namespace HidePlayers.Data;
+namespace HidePlayers;
 
 public enum HideMode : byte
 {
-    ALL = 0,
-    TEAM,
-    ENEMY
+    All = 0,
+    Team,
+    Enemy
 }

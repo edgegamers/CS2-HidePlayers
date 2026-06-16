@@ -1,8 +1,7 @@
 using CounterStrikeSharp.API.Core;
-using HidePlayers.Data;
 using Microsoft.Extensions.Logging;
 
-namespace HidePlayers.Plugin;
+namespace HidePlayers;
 
 public sealed partial class Plugin : IPluginConfig<PluginConfig>
 {
@@ -21,9 +20,9 @@ public sealed partial class Plugin : IPluginConfig<PluginConfig>
 
     public HideMode ParseHideMode(string hideMode) => hideMode switch
     {
-        "@all" => HideMode.ALL,
-        "@team" => HideMode.TEAM,
-        "@enemy" => HideMode.ENEMY,
-        _ => HideMode.ALL
+        "@all" => HideMode.All,
+        "@team" => HideMode.Team,
+        "@enemy" => HideMode.Enemy,
+        _ => HideMode.All
     };
 }
